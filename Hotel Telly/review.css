@@ -1,0 +1,116 @@
+
+/* HERO */
+.review-hero {
+  position: relative;
+  height: 380px;
+  
+  background-image: url('assests/review.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.review-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.review-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 80px;
+  color: #fff;
+}
+
+.review-hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  margin-bottom: 12px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.breadcrumb a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #fff;
+}
+
+/* REVIEWS SECTION */
+.reviews-section {
+  padding: 70px 80px;
+  background: #fff;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* REVIEW CARD */
+.review-card {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  padding: 36px 30px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Big quote mark */
+.quote-mark {
+  font-family: 'Playfair Display', serif;
+  font-size: 72px;
+  color: #222;
+  line-height: 0.6;
+  margin-bottom: 10px;
+}
+
+.review-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.8;
+  flex-grow: 1;
+}
+
+/* Reviewer row */
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+/* Reviewer profile photos */
+.reviewer img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviewer-info h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.stars {
+  color: #f5a623;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.star-half {
+  opacity: 0.4;
+}

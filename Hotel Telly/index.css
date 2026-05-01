@@ -1,0 +1,167 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* FULL PAGE */
+    .register-page {
+      display: flex;
+      height: 100vh;
+      width: 100%;
+    }
+
+    /* LEFT SIDE Background Image */
+    .register-left {
+      width: 55%;
+      
+      background-image: url('assests/about.webp');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    /* Dark overlay on image */
+    .register-left-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+    }
+
+    /* Hotel logo + name on top of image */
+    .register-brand {
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .register-brand .logo-box {
+      display: inline-block;
+      border: 2px solid #fff;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      width: 38px;
+      height: 38px;
+      text-align: center;
+      line-height: 36px;
+    }
+
+    .register-brand .logo-text small {
+      display: block;
+      color: #ddd;
+      font-size: 10px;
+      letter-spacing: 2px;
+    }
+
+    .register-brand .logo-text strong {
+      display: block;
+      color: #fff;
+      font-size: 18px;
+      letter-spacing: 3px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* RIGHT SIDE — White Register Box */
+    .register-right {
+      width: 45%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .register-box {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .register-box h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 30px;
+      color: #111;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .register-box .subtitle {
+      text-align: center;
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 30px;
+    }
+
+    .reg-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 18px;
+    }
+
+    .reg-group label {
+      font-size: 13px;
+      font-weight: 500;
+      color: #333;
+      margin-bottom: 6px;
+    }
+
+    .reg-group input {
+      padding: 12px 14px;
+      border: 1px solid #ddd;
+      font-size: 14px;
+      font-family: 'Jost', sans-serif;
+      color: #444;
+      outline: none;
+      transition: border 0.2s;
+      border-radius: 2px;
+    }
+
+    .reg-group input:focus {
+      border-color: #111;
+    }
+
+    .btn-register {
+      width: 100%;
+      background: #111;
+      color: #fff;
+      border: none;
+      padding: 14px;
+      font-size: 15px;
+      font-family: 'Jost', sans-serif;
+      letter-spacing: 1px;
+      cursor: pointer;
+      border-radius: 30px;
+      margin-top: 8px;
+      transition: background 0.2s;
+    }
+
+    .btn-register:hover {
+      background: #333;
+    }
+
+    .view-users-link {
+      display: block;
+      text-align: center;
+      margin-top: 18px;
+      font-size: 14px;
+      color: #111;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+    }
+
+    .view-users-link:hover {
+      text-decoration: underline;
+    }
+

@@ -1,0 +1,170 @@
+
+
+/* HERO */
+.contact-hero {
+  position: relative;
+  height: 320px;
+  
+  background-image: url('assests/contact.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.contact-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.40);
+}
+
+.contact-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 80px;
+  color: #fff;
+}
+
+.contact-hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  margin-bottom: 12px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.breadcrumb a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #fff;
+}
+
+/* CONTACT MAIN LAYOUT */
+.contact-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding: 80px 120px;
+  background: #fff;
+  align-items: start;
+}
+
+/* LEFT: INFO */
+.contact-info h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.contact-intro {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 36px;
+}
+
+.contact-block {
+  margin-bottom: 30px;
+}
+
+.contact-block h4 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.contact-block p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 2px;
+}
+
+/* Social icons in contact info */
+.contact-socials {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.contact-socials a {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-socials a:hover {
+  color: #111;
+}
+
+/* RIGHT- FORM */
+.contact-form-box h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.contact-form-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.contact-form-inner input,
+.contact-form-inner textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  font-family: 'Jost', sans-serif;
+  color: #444;
+  outline: none;
+  background: #fff;
+  transition: border 0.2s;
+}
+
+.contact-form-inner input:focus,
+.contact-form-inner textarea:focus {
+  border-color: #999;
+}
+
+.contact-form-inner textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.btn-contact-submit {
+  width: 100%;
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 16px;
+  font-size: 15px;
+  font-family: 'Jost', sans-serif;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-contact-submit:hover {
+  background: #333;
+}

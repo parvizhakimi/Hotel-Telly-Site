@@ -1,0 +1,325 @@
+
+/* HERO */
+.booking-hero {
+  position: relative;
+  height: 400px;
+ 
+  background-image: url('assests/booking.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.booking-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.40);
+}
+
+.booking-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 80px;
+  color: #fff;
+}
+
+.booking-hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  margin-bottom: 12px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.breadcrumb a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #fff;
+}
+
+/* CHOOSE DATES */
+.choose-dates {
+  padding: 60px 80px 40px;
+  background: #fff;
+}
+
+.choose-dates h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #111;
+  margin-bottom: 30px;
+}
+
+.dates-bar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.date-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.date-item label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #888;
+}
+
+.date-display {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.date-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #111;
+  line-height: 1;
+}
+
+.date-month {
+  font-size: 14px;
+  color: #555;
+}
+
+.date-display select {
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  color: #555;
+  cursor: pointer;
+  outline: none;
+  margin-left: 2px;
+}
+
+.date-divider {
+  font-size: 20px;
+  color: #ccc;
+  margin-top: 20px;
+}
+
+.btn-check {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-family: 'Jost', sans-serif;
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin-top: 16px;
+  transition: background 0.2s;
+}
+
+.btn-check:hover {
+  background: #333;
+}
+
+/* CHOOSE ROOMS */
+.choose-rooms {
+  padding: 20px 80px 50px;
+  background: #fff;
+}
+
+.choose-rooms h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #111;
+  margin-bottom: 24px;
+}
+
+.choose-rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.choose-room-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.choose-room-card img:hover {
+  transform: scale(1.02);
+}
+
+.choose-room-card p {
+  margin-top: 12px;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: #222;
+}
+
+
+.reservation-section {
+  padding: 50px 80px 70px;
+  background: #fff;
+}
+
+.reservation-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #111;
+  margin-bottom: 40px;
+}
+
+.reservation-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* FORM */
+.reservation-form h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #111;
+  margin-bottom: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  font-family: 'Jost', sans-serif;
+  color: #444;
+  outline: none;
+  background: #fff;
+  transition: border 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #aaa;
+}
+
+.form-group textarea {
+  height: 130px;
+  resize: vertical;
+}
+
+/* BILL */
+.reservation-bill h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.bill-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.bill-table tr td {
+  padding: 12px 0;
+  font-size: 14px;
+  color: #444;
+  border-bottom: 1px solid #eee;
+}
+
+.bill-table tr td:last-child {
+  text-align: right;
+}
+
+.bill-total td {
+  font-weight: bold;
+  color: #111;
+  font-size: 15px;
+}
+
+/* PAYMENT */
+.payment-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: #111;
+  margin-bottom: 16px;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.payment-option input[type="radio"] {
+  margin-top: 4px;
+  accent-color: #111;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.payment-option strong {
+  font-size: 13px;
+  color: #111;
+  display: block;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+
+.payment-option p {
+  font-size: 12px;
+  color: #777;
+  line-height: 1.6;
+}
+
+.btn-reserve {
+  width: 100%;
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 16px;
+  font-size: 15px;
+  font-family: 'Jost', sans-serif;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-reserve:hover {
+  background: #333;
+}

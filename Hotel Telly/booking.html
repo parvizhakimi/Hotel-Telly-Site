@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="assests/t.images.png" />
+  <title>Booking - Hotel Telly</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="booking.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-box">T</span>
+      <div class="logo-text">
+        <small>HOTEL</small>
+        <strong>TELLY</strong>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="hotel.html">HOME</a></li>
+      <li><a href="blog.html"> BLOG </a></li>
+      <li><a href="room.html">ROOMS</a></li>
+      <li><a href="booking.html">BOOKING</a></li>
+      <li><a href="review.html"> REVIEW </a>  </li>
+      <li><a href="faq.html">  FAQ  </a> </li>
+      <li><a href="about.html">ABOUT US</a></li>
+   <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <a href="booking.html" class="btn-book">Book Now</a>
+  </nav>
+
+  <!-- BOOKING HERO -->
+  <section class="booking-hero">
+    
+    <div class="booking-hero-overlay"></div>
+    <div class="booking-hero-content">
+      <h1>Booking</h1>
+      <p class="breadcrumb">
+        <a href="hotel.html">Home</a> / Booking
+      </p>
+    </div>
+  </section>
+
+  <!-- CHOOSE DATES -->
+  <section class="choose-dates">
+    <h2>Choose Dates</h2>
+    <div class="dates-bar">
+
+      <div class="date-item">
+        <label>ARRIVAL</label>
+        <div class="date-display">
+          <span class="date-num">29</span>
+          <span class="date-month">Apr</span>
+          <select>
+            <option>Apr</option>
+            <option>May</option>
+            <option>Jun</option>
+            <option>Jul</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="date-divider">—</div>
+
+      <div class="date-item">
+        <label>DEPARTURE</label>
+        <div class="date-display">
+          <span class="date-num">29</span>
+          <span class="date-month">Apr</span>
+          <select>
+            <option>Apr</option>
+            <option>May</option>
+            <option>Jun</option>
+            <option>Jul</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="date-item">
+        <label>ROOMS</label>
+        <div class="date-display">
+          <span class="date-num">01</span>
+        </div>
+      </div>
+
+      <div class="date-item">
+        <label>GUESTS</label>
+        <div class="date-display">
+          <span class="date-num">01</span>
+        </div>
+      </div>
+
+      <button class="btn-check">Check availability</button>
+
+    </div>
+  </section>
+
+  <!-- CHOOSE ROOMS -->
+  <section class="choose-rooms">
+    <h2>Choose Rooms</h2>
+    <div class="choose-rooms-grid">
+
+      <div class="choose-room-card">
+        
+        <img src="assests/room1.jpeg" alt="Classic Rooms" />
+        <p>Classic Rooms</p>
+      </div>
+
+      <div class="choose-room-card">
+        
+        <img src="assests/room2.jpeg" alt="Grand Deluxe Rooms" />
+        <p>Grand Deluxe Rooms</p>
+      </div>
+
+      <div class="choose-room-card">
+        
+        <img src="assests/room3.jpeg" alt="Ultra Superior Rooms" />
+        <p>Ultra Superior Rooms</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAKE A RESERVATION -->
+  <section class="reservation-section">
+    <h2>Make a Reservation</h2>
+
+    <div class="reservation-layout">
+
+      <!-- LEFT DETAILS FORM -->
+      <div class="reservation-form">
+        <h3>Details</h3>
+
+        <div class="form-group">
+          <label>Select Room</label>
+          <select>
+            <option>Select Room</option>
+            <option>Classic Rooms</option>
+            <option>Grand Deluxe Rooms</option>
+            <option>Ultra Superior Rooms</option>
+          </select>
+        </div>
+
+
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Write Your Name Here" />
+        </div>
+
+        <div class="form-group">
+          <label>Your Email</label>
+          <input type="email" placeholder="Write Your Email Here" />
+        </div>
+
+        <div class="form-group">
+          <label>Your Phone Number</label>
+          <input type="tel" placeholder="Phone Number" />
+        </div>
+
+        <div class="form-group">
+          <label>Your Message</label>
+          <textarea placeholder="Write Your Message Here"></textarea>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: TOTAL BILL + PAYMENT -->
+      <div class="reservation-bill">
+        <h3>Total Bill</h3>
+
+        <table class="bill-table">
+          <tr>
+            <td><strong>SUBTOTAL</strong></td>
+            <td>$2,370.00</td>
+          </tr>
+          <tr>
+            <td><strong>VAT</strong></td>
+            <td>$250.00</td>
+          </tr>
+          <tr class="bill-total">
+            <td><strong>TOTAL</strong></td>
+            <td>$2,620.00</td>
+          </tr>
+        </table>
+
+        <h3 class="payment-title">Payment Option</h3>
+
+        <div class="payment-options">
+
+          <label class="payment-option">
+            <input type="radio" name="payment" checked />
+            <div>
+              <strong>DIRECT BANK TRANSFER</strong>
+              <p>Make your payment directly into our bank account. Please use your Order ID. Your order will be shipped after funds have cleared in our account.</p>
+            </div>
+          </label>
+
+          <label class="payment-option">
+            <input type="radio" name="payment" />
+            <div>
+              <strong>CHECK PAYMENTS</strong>
+              <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+            </div>
+          </label>
+
+          <label class="payment-option">
+            <input type="radio" name="payment" />
+            <div>
+              <strong>CASH</strong>
+              <p>Pay with cash on site.</p>
+            </div>
+          </label>
+
+          <label class="payment-option">
+            <input type="radio" name="payment" />
+            <div>
+              <strong>PAYPAL</strong>
+              <p>Pay via PayPal; you can pay with your credit card if you don't have a PayPal account.</p>
+            </div>
+          </label>
+
+        </div>
+
+        <button class="btn-reserve">Make Reservation</button>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>About us</h3>
+        <p>Ultrices interdum viverra pharetra, tellus. Sapien eu diam ipsum volutpat, amet fringi verra pharetrailla.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Activities</a></li>
+          <li><a href="room.html">Rooms</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>Tea Berry, Marinette, USA</p>
+        <p>+31 939 777 4546233</p>
+        <p>info@templatesjungle.com</p>
+      </div>
+      <div class="footer-col">
+        <h3>Get social</h3>
+        <p>Follow us on social platforms and keep in touch with Templates Jungle.</p>
+        <div class="social-icons">
+                  <a href="https://www.facebook.com/parviz.hakimi1"> FB </a> 
+          <a href="https://x.com/parvizhakimi?s=11"> X </a>
+          <a href="https://pk.linkedin.com/in/parviz-hakimi-487587390"> LINK </a> 
+          <a href="https://github.com/parvizhakimi"> GIT </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2021 Copyright Telly.</p>
+      <p>Payment methods: PayPal | Mastercard | Visa</p>
+      <p>Free HTML Website By: Templates Jungle.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+
+.room-hero {
+  position: relative;
+  height: 420px;
+  /*  ROOMS HERO IMAGE */
+  background-image: url('assests/backgroungroom.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.room-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.room-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 80px;
+  color: #fff;
+}
+
+.room-hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  margin-bottom: 12px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.breadcrumb a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #fff;
+}
+
+/* ROOMS GRID */
+.rooms-page-section {
+  padding: 70px 80px;
+  background: #fff;
+}
+
+.rooms-page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* ROOM CARD */
+.room-page-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Room images */
+.room-page-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.room-page-card img:hover {
+  transform: scale(1.02);
+}
+
+.room-page-info {
+  padding: 20px 0;
+}
+
+.room-page-info h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #111;
+  margin-bottom: 16px;
+}
+
+/* Room details table */
+.room-details {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.room-details tr td {
+  padding: 5px 0;
+  font-size: 14px;
+  color: #444;
+  vertical-align: top;
+}
+
+.room-details tr td:first-child {
+  font-weight: bold;
+  color: #111;
+  width: 90px;
+}
+
+.room-details tr td span {
+  color: #888;
+  font-size: 13px;
+}
+
+/* More Details Button */
+.btn-more {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Jost', sans-serif;
+  letter-spacing: 1px;
+  transition: background 0.2s;
+  margin-top: 8px;
+}
+
+.btn-more:hover {
+  background: #333;
+}
